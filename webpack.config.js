@@ -7,6 +7,9 @@ module.exports = ({ mode }) => ({
   devtool: 'source-map',
   context: __dirname + '/src',
   entry: './ClientApp.tsx',
+  output: {
+    chunkFilename: '[name].chunk.js',
+  },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx'],
   },
