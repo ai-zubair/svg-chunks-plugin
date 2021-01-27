@@ -27,11 +27,10 @@ class AsyncRoute extends Component<AsyncRouteProps, AsyncRouteState> {
   
   constructor(props: AsyncRouteProps) {
     super(props)
-    console.log(props);
   }
 
   state = {
-    isRouteLoaded: false
+    isRouteLoaded: false,
   }
 
   componentDidMount = async() => {

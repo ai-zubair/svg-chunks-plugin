@@ -1,19 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { AsyncRoute, ComponentProps } from './components/AsyncRoute';
-
-namespace ModuleLoaders{
-  export const landingLoader = () => import(
-    /* webpackChunkName: "Landing" */
-    /* webpackPrefetch: true */
-    './components/Landing');
-  
-  export const dummyLoader = () => import(
-    /* webpackChunkName: "Dummy" */
-    /* webpackPrefetch: true */
-    './components/Dummy');
-}
-
+import { ModuleLoaders } from './routeModuleLoaders';
 class App extends Component {
   render() {
     return (
